@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { MetricsService } from './metrics.service';
 import { MetricsController } from './metrics.controller';
-import { PrometheusModule } from '../prometeus/prometheus.module';
+import { PrometheusModule } from './prometeus/prometheus.module';
 
 @Module({
   imports: [PrometheusModule],

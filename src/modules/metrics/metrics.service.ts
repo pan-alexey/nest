@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { PrometheusService } from '../prometeus/prometheus.service';
+import { PrometheusService } from './prometeus/prometheus.service';
 
 @Injectable()
 export class MetricsService {
