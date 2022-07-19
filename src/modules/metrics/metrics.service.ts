@@ -18,6 +18,6 @@ export class MetricsService {
   }
 
   public onRequest() {
-    console.log('response code');
+    this.promClientService.Gauge('request', 'http request').inc();
   }
 }

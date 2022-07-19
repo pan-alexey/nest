@@ -13,7 +13,7 @@ export class HttpErrorInterceptor implements NestInterceptor {
     const now = Date.now();
     return next.handle().pipe(
       catchError((err) => {
-        console.log('httpError.interceptor');
+        // console.log('error inteceptor'); // send error in inteceptor to metrics
         throw {
           ...err,
           controllerName: context.getClass().name,

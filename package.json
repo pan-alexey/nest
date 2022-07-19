@@ -21,10 +21,12 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@fastify/static": "^6.4.0",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-fastify": "^9.0.1",
     "@nestjs/platform-socket.io": "^9.0.2",
+    "@nestjs/swagger": "^6.0.4",
     "@nestjs/websockets": "^9.0.2",
     "module": "^1.0.0",
     "prom-client": "^14.0.1",

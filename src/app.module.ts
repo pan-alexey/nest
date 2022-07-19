@@ -3,8 +3,8 @@ import { SocketModule } from './modules/socket/socket.module';
 import { HomeModule } from './modules/home/home.module';
 import { MetricsModule } from './modules/metrics/metrics.module';
 
-import { HttpExceptionFilter } from './app/httpError.filter';
-import { HttpErrorInterceptor } from './app/httpError.interceptor';
+import { HttpExceptionFilter } from './core/httpError.filter';
+import { HttpErrorInterceptor } from './core/httpError.interceptor';
 import { APP_FILTER, APP_INTERCEPTOR } from '@nestjs/core';
 
 @Module({

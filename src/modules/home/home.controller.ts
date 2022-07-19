@@ -23,9 +23,4 @@ export class HomeController {
   public NOT_FOUND(): Promise<string> {
     throw new HttpException('Forbidden', HttpStatus.NOT_FOUND);
   }
-
-  @Get('prometeus')
-  public prometeus(): Promise<string> {
-    return this.homeService.getMetrics();
-  }
 }

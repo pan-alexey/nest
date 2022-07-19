@@ -19,6 +19,8 @@ export class HttpExceptionFilter implements ExceptionFilter {
     const context = host.switchToHttp();
     const code = (exception as any).code;
     httpAdapter.reply(context.getResponse(), exception, code);
-    console.log(exception);
+
+    // not catch error
+    // console.log('Not intercepted error', exception.getStatus(), context); // send error not intecepted to metrics
   }
 }
